@@ -26,7 +26,7 @@ Este proyecto realiza scraping del sitio [quotes.toscrape.com](https://quotes.to
 
 ## Instalación y Ejecución
 
-### 1. Clonar el repositorio 
+1. Clonar el repositorio 
 
 ```bash
 git clone 
@@ -37,20 +37,22 @@ cd rpa_quotes_project
 python3 -m venv venv
 source venv/bin/activate
 
-### 3. Instalar dependencias
+3. Instalar dependencias
 ```bash
 pip install -r requirements.txt
 
-### 4. Ejecutar el scraper
+4. Ejecutar el scraper
 ```bash
 python -m app.scraper
 
-### 5. Ejecutar la API
+5. Ejecutar la API
 ```bash
 uvicorn app.main:app --reload
 
-### 6. Probar la API en Swagger UI
+6. Probar la API en Swagger UI
 Abrir en el navegador: http://127.0.0.1:8000/docs
+
+---
 
 ## Endpoints
 GET /quotes
@@ -61,6 +63,8 @@ Filtros opcionales combinables:
 ?author=Einstein – Filtra por autor.
 ?tag=change – Filtra por etiqueta.
 ?search=world – Búsqueda libre por contenido.
+
+---
 
 ## Docker
 El proyecto puede ejecutarse fácilmente con Docker.
