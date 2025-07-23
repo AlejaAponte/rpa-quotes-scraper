@@ -32,7 +32,7 @@ Este proyecto realiza scraping del sitio [quotes.toscrape.com](https://quotes.to
 git clone 
 cd rpa_quotes_project
 
-### 2. Crear y activar entorno virtual
+2. Crear y activar entorno virtual
 ```bash
 python3 -m venv venv
 source venv/bin/activate
